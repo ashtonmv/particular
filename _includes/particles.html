@@ -1,0 +1,24 @@
+<!-- Add particles to all elements with class "particles" -->
+<script>
+   $(document).ready(function() {
+      $('.particles').particleground({
+      minSpeedX: {{ site.data.particles.speed.xmin }},
+      maxSpeedX: {{ site.data.particles.speed.xmax }},
+      minSpeedY: {{ site.data.particles.speed.ymin }},
+      maxSpeedY: {{ site.data.particles.speed.ymax }},
+      directionX: '{{ site.data.particles.direction.x }}',
+      directionY: '{{ site.data.particles.direction.y }}',
+      density: {{ site.data.particles.density }},
+      dotColor: '{{ site.data.particles.color }}',
+      lineColor: '{{ site.data.particles.line.color }}',
+      particleRadius: {{ site.data.particles.radius }},
+      lineWidth: {{ site.data.particles.line.width }},
+      curvedLines: {{ site.data.particles.line.curved }},
+      proximity: {{ site.data.particles.proximity }}, 
+      parallax: {{ site.data.particles.parallax.activate }},
+      parallaxMultiplier: {{ site.data.particles.parallax.multiplier }},
+      onInit: function() {},
+      onDestroy: function() {}
+      });
+   });
+   </script>

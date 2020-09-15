@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {% if site.data.formbutton.link %}
+        {% include formbutton.html %}
+    {% endif %}
+    {% include head.html %}
+    <body id="page-top" class="index">
+
+        {% include {{ page.include }} %}
+
+        {% include particles.html %}
+
+    </body>
+</html>

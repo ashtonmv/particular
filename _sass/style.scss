@@ -1,0 +1,769 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background: $primary-color;
+    background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+}
+
+p {
+    font-size: 20px;
+}
+
+.small {
+    font-size: 16px;
+}
+
+p, li {
+    font-family: $body-font;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: $content-color;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* .fa, .fab, .fas {
+    font-size: 10px;
+} */
+
+.row {
+    padding-bottom: 40px;
+
+    .left-justified {
+        text-align: left;
+    }
+
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.img-featured {
+    height: auto;
+}
+
+.page-container .img-featured {
+    max-width: 200px;
+    border: 2px solid $content-color;
+    border-radius: 40px;
+}
+
+.modal-body .img-featured {
+    max-width: 400px;
+}
+
+.pg-canvas {
+    position: absolute;
+    background: $primary-color;
+    background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center !important;
+    color: $content-color;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.pg-canvas {
+    position: fixed !important;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.page-container {
+    display: inherit;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+
+.header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.header .intro-text .name {
+    display: block;
+    font-family: $header-font, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.header .intro-text .description {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.header .intro-text .name {
+    font-size: 4.75em;
+}
+
+.header .intro-text .description {
+    font-size: 1.75em;
+}
+
+@media screen and (min-height: $height-break) {
+    .header .container {
+        padding-top: 200px;
+    }
+
+    .typewrite {
+        font-size: 2em !important;
+        margin-top: 100px !important;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.nav-row {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.page-nav {
+    background: $content-light;
+    position: relative;
+    top: -20px;
+    padding: 50px 35px 35px 35px !important;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid $content-color;
+}
+
+.nav-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+@media screen and (min-width: $width-break) {
+    .nav-break {
+        flex-basis: 0%;
+    }
+
+    .nav-row {
+        justify-content: center;
+    }
+}
+
+.nav-icon {
+    text-decoration: none !important;
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 10px auto;
+    padding: 13px 10px 6px 10px !important;
+    border: 2px solid $content-color;
+    border-radius: 20px;
+    color: $content-color;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-icon:hover {
+    text-decoration: None !important;
+    background: $content-light;
+    transition: .2s ease-in-out;
+    cursor: pointer !important;
+}
+
+.nav-icon.active {
+    background: $content-mid;
+    color: $primary-color;
+}
+
+.nav-icon.active:hover {
+    background: $content-mid;
+}
+
+#formbutton-title {
+    font-family: $header-font !important;
+}
+
+.typewrite {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: $content-color;
+    position: relative;
+    background: none;
+    font-family: $header-font, Helvetica, Arial, sans-serif;
+}
+
+.typewrite a {
+    text-decoration: None;
+}
+
+.blinking-cursor {
+    border-right: 0.1em solid $content-color;
+    animation: blink 1000ms linear infinite;
+}
+
+@-webkit-keyframes blink{
+	0%, 100% {border-right-color: rgba(0, 0, 0, 0);}
+	50% {border-right-color: $content-color;}
+}
+
+@-moz-keyframes blink{
+	0%, 100% {border-right-color: rgba(0, 0, 0, 0);}
+	50% {border-right-color: $content-color;}
+}
+
+@keyframes blink{
+	0%, 100% {border-right-color: rgba(0, 0, 0, 0);}
+	50% {border-right-color: $content-color;}
+}
+
+section {
+    z-index: 5;
+    position: relative;
+    padding: 0px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: $content-color;
+    background: none;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.project-item {
+    max-width: 250px;
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: 2px solid $content-color;
+    transition: 0.2s ease-in-out;
+    background: $content-light;
+}
+
+.project-item:hover {
+    cursor: pointer;
+    background: $content-mid;
+    transition: 0.2s ease-in-out;
+}
+
+.project-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.project-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.project-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.project-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.project-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.project-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.project-modal .close-modal .lr {
+    z-index: 1051;
+    width: 2px;
+    height: 25px;
+    margin-left: 35px;
+    background-color: $content-color;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.project-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 2px;
+    height: 25px;
+    background-color: $content-color;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.modal-content {
+    background-color: $primary-color !important;
+    color: $content-color;
+}
+
+@-webkit-keyframes reset {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes reset {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes reset {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media(hover: hover) {
+	.fade-0 {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 0.5s;
+		-webkit-animation-timing-function: ease-in;
+		
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 0.5s;
+		-moz-animation-timing-function: ease-in;
+		
+        animation-name: reset, fade-in;
+        animation-duration: 0.5s;
+		animation-timing-function: ease-in;
+	}
+
+	.fade-1 {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1s;
+		-webkit-animation-timing-function: ease-in;
+		
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1s;
+		-moz-animation-timing-function: ease-in;
+		
+        animation-name: reset, fade-in;
+        animation-duration: 1s;
+		animation-timing-function: ease-in;
+	}
+	
+	.fade-2 {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.2s;
+		-webkit-animation-timing-function: ease-in;
+		
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.2s;
+		-moz-animation-timing-function: ease-in;
+		
+        animation-name: reset, fade-in;
+        animation-duration: 1.2s;
+		animation-timing-function: ease-in;
+	}
+	
+	.fade-3 {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.4s;
+		-webkit-animation-timing-function: ease-in;
+		
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.4s;
+		-moz-animation-timing-function: ease-in;
+		
+        animation-name: reset, fade-in;
+        animation-duration: 1.4s;
+		animation-timing-function: ease-in;
+	}
+	 
+	.fade-4 {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.6s;
+		-webkit-animation-timing-function: ease-in;
+		
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.6s;
+		-moz-animation-timing-function: ease-in;
+		
+        animation-name: reset, fade-in;
+        animation-duration: 1.6s;
+		animation-timing-function: ease-in;
+	}
+	
+	.fade-5 {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.8s;
+		-webkit-animation-timing-function: ease-in;
+		
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.8s;
+		-moz-animation-timing-function: ease-in;
+		
+        animation-name: reset, fade-in;
+        animation-duration: 1.8s;
+		animation-timing-function: ease-in;
+	}
+	
+	.fade-6 {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 2s;
+		-webkit-animation-timing-function: ease-in;
+		
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 2s;
+		-moz-animation-timing-function: ease-in;
+		
+        animation-name: reset, fade-in;
+        animation-duration: 2s;
+		animation-timing-function: ease-in;
+	}
+}
+
+/* resume-specifics */
+
+#resume-body {
+    width: 90%;
+    max-width: 800px;
+    color: $content-color;
+    margin: 30px auto;
+}
+
+#resume-body a, a[href^=tel] {
+    color: $content-color;
+    text-decoration: underline;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+#resume-body section {
+    padding: 20px 0 0;
+}
+
+#resume-body .pg-canvas {
+    background: none;
+}
+
+.resume-section.btn-outline {
+    width: 200px;
+    text-align: center !important;
+    border: solid 2px $content-color;
+    font-size: 20px;
+    color: $primary-color;
+    background: $content-color;
+    transition: all .3s ease-in-out;
+}
+
+.resume-section.btn-outline:hover,
+.resume-section.btn-outline:focus,
+.resume-section.btn-outline:active,
+.resume-section.btn-outline.active {
+    color: $content-color;
+    background: $primary-color;
+    transition: all .3s ease-in-out;
+}
+
+.resume-section {
+    padding: 25px 25px !important;
+    margin: 0px 0px 20px 0px !important;
+    position: relative;
+    border: 2px solid $content-color;
+    border-radius: 20px 20px 20px 20px;
+    background: $content-light;
+    z-index: 2000;
+}
+
+.resume-section h2 {
+    padding-bottom: 10px;
+}
+
+.resume-bullet {
+    font-size: 1.1em;
+    padding: 0.5em 0em 0em 1em;
+}
+
+.clear {
+    clear: both;
+}
+
+.mainDetails {
+    position: relative;
+    top: -50px;
+    padding: 0px 35px 35px 35px !important;
+    margin: 0px auto !important;
+    border-radius: 10px 10px 20px 20px;
+    color: $content-color;
+}
+
+#name h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    font-family: $body-font, Helvetica, Arial, sans-serif;
+    margin-bottom: 6px;
+}
+
+#name h2 {
+    font-size: 2em;
+    margin-left: 2px;
+    font-family: $body-font, Helvetica, Arial, sans-serif;
+}
+
+#headshot {
+    width: 18.5%;
+    float: left;
+    margin-right: 30px;
+}
+
+#headshot img {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 50px;
+    border-radius: 20px;
+}
+
+#name {
+    float: left;
+}
+
+#contactDetails {
+    padding-top: 20px;
+    float: right;
+}
+
+#contactDetails ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+
+#contactDetails ul li {
+    margin-bottom: 3px;
+    color: $content-color;
+}
+
+.sectionTitle {
+    float: left;
+    width: 25%;
+}
+
+.sectionTitle hr {
+    display: None;
+}
+
+.sectionContent {
+    float: right;
+    width: 72.5%;
+}
+
+.sectionContent hr {
+    border: 1px solid $content-light;
+}
+
+.sectionTitle h1 {
+    font-family: $body-font, Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color: $content-color;
+    margin: 0px auto;
+}
+
+.sectionContent h2 {
+    font-family: $body-font, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: -2px;
+}
+
+.subDetails {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+
+.keySkills {
+    list-style-type: none;
+    -moz-column-count:3;
+    -webkit-column-count:3;
+    column-count:3;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: $content-color;
+}
+
+.keySkills ul li {
+    margin-bottom: 3px;
+}
+
+.ref {
+    font-style: italic !important;
+}
+
+@media all and (min-width: 602px) and (max-width: 750px) {
+    #headshot {
+        display: none;
+    }
+    
+    .keySkills {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+    }
+}
+
+@media all and (max-width: 601px) {
+    #resume-body {
+        width: 95%;
+        margin: 10px auto;
+        min-width: 280px;
+    }
+    
+    #headshot {
+        display: none;
+    }
+    
+    #name, #contactDetails {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sectionTitle, .sectionContent {
+        float: none;
+        width: 100%;
+    }
+    
+    .sectionTitle {
+        margin-left: -2px;
+        font-size: 1.25em;
+    }
+
+    .sectionTitle hr {
+        display: inline-block;
+        border: 1px solid $content-color;
+        width: 100%;
+    }
+    
+    .keySkills {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+    }
+}
+
+@media all and (max-width: 480px) {
+    
+    #name h1 {
+        line-height: .8em;
+        margin-bottom: 4px;
+    }
+}
+
+@media print {
+    #resume-body {
+        width: 100%;
+    }
+}

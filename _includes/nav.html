@@ -1,0 +1,27 @@
+<div id="nav" class="nav-row {% unless page.url == '/' or page.url contains '404' %}page-nav{% endunless %}">
+    {% if page.url == "/" %}
+        {% assign i = 1 %}
+        {% for nav-icon in site.data.nav-icons %} {% unless nav-icon.url == "/" %}
+
+            <div id="{{ nav-icon.id }}" data-typewrite="{{ nav-icon.typewrite }}" class="nav-icon fade-{{ i }} {{ nav-icon.icon }}"
+            {% if nav-icon.url contains 'https' %} onclick="window.open('{{ nav-icon.url }}');"
+            {% else %} onclick="location.href='{{ nav-icon.url | relative_url }}';"
+            {% endif %}></div>
+
+            {% assign i = i | plus:1 %}
+        {% endunless %}{% endfor %}
+    {% else %}
+        {% assign i = 1 %}
+        {% for nav-icon in site.data.nav-icons %}
+            <div id="{{ nav-icon.id }}" data-typewrite="{{ nav-icon.typewrite }}" class="nav-icon {{ nav-icon.icon }} {% if page.url contains nav-icon.url and nav-icon.url != '/' %}active{% endif %}"
+            {% if nav-icon.url contains 'https' %} onclick="window.open('{{ nav-icon.url }}');"
+            {% else %} onclick="location.href='{{ nav-icon.url | relative_url }}';"
+            {% endif %}></div>
+            {% if i == 3 %}
+                <div class="nav-break"></div>
+                {% assign i = 0 %}
+            {% endif %}
+            {% assign i = i | plus:1 %}
+        {% endfor %}
+    {% endif %}
+</div>

@@ -1,0 +1,14 @@
+# Main site settings
+title: Particular
+email: your@email.com
+url: your-website.com
+baseurl: ""
+description: A clean, comfortable home for your resumé.
+phone: +0 867 5309
+address: 1 Long Str.</br>Long Island, Long State 00000
+keywords: Web, Development, Software, Programmer, Coding, Resume, resume
+meta_author: Your Name
+
+# Build settings
+markdown: kramdown
+permalink: pretty

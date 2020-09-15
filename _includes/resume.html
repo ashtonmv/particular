@@ -1,0 +1,147 @@
+<div id="resume-body" class="fade-0 particles">
+	<div>
+	<div class="mainDetails resume-section">
+		{% include nav.html %}
+
+		<div id="headshot" class="fade-0">
+			<img src="{{ site.data.resume.image | relative_url }}" alt="{{ site.title }}" />
+		</div>
+		
+		<div id="name">
+			<h1 class="fade-1">{{ site.data.resume.name }}</h1>
+			<h2 class="fade-2">{{ site.data.resume.role }}</h2>
+		</div>
+		
+		<div id="contactDetails" class="fade-4">
+			<ul>
+				<li><i class="fas fa-envelope"></i><a href="mailto:{{ site.email }}" target="_blank"> {{ site.email }}</a></li>
+				<li><i class="fas fa-globe"></i><a href="/"> {{ site.url }}</a></li>
+				<li><i class="fas fa-phone"></i> {{ site.phone }}</li>
+				<li><i class="fas fa-home"></i> {{ site.address }}</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="fade-5">
+		<section class="resume-section">
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+					<hr>
+				</div>
+				
+				<div class="sectionContent">
+					<p>{{ site.data.resume.personal-profile }}</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+		<section class="resume-section">
+			<div class="sectionTitle">
+				<h1>Skills</h1>
+				<hr>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					{% for skill in site.data.resume.skills %}
+						<li>{{ skill }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>		
+		
+		<section class="resume-section">
+			<div class="sectionTitle">
+				<h1>Education</h1>
+				<hr>
+			</div>
+			
+			<div class="sectionContent">
+				{% assign i=0 %}
+				{% for degree in site.data.resume.education %}
+					{% if i != 0%}<hr>{% endif %}
+					{% assign i = i | plus:1 %}
+					<article>
+						<h2>{{ degree.title }}, {{ degree.institute }}</h2>
+						<p class="subDetails">{{ position.dates }}</p>
+						{% for bullet in position.bullets %}
+							<p class="resume-bullet">{% if bullet.title %}{{ bullet.title }}: {% endif %}{{ bullet.info }}</p>
+						{% endfor %}
+					</article>
+				{% endfor %}
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section class="resume-section">
+			<div class="sectionTitle">
+				<h1>Work History</h1>
+				<hr>
+			</div>
+			
+			<div class="sectionContent">
+				{% assign i=0 %}
+				{% for job in site.data.resume.work-history %}
+					{% if i != 0%}<hr>{% endif %}
+					{% assign i = i | plus:1 %}
+					<article>
+						<h2>{{ job.title }}</h2>
+						<p class="subDetails">{{ job.employer }}, {{ job.dates }}</p>
+						{% for bullet in job.bullets %}
+							<p class="resume-bullet">{{ bullet }}</p>
+						{% endfor %}
+					</article>
+				{% endfor %}
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section class="resume-section">
+			<div class="sectionTitle">
+				<h1>Awards and Other Work</h1>
+				<hr>
+			</div>
+			
+			<div class="sectionContent">
+				{% assign i=0 %}
+				{% for award in site.data.resume.awards %}
+					{% if i != 0%}<hr>{% endif %}
+					{% assign i = i | plus:1 %}
+					<h2>{{ award.title }}</h2>
+					{% for bullet in award.bullets %}
+						<p class="resume-bullet">{{ bullet }}</p>
+					{% endfor %}
+				{% endfor %}
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section class="resume-section">
+			<div class="sectionTitle">
+				<h1>References</h1>
+				<hr>
+			</div>
+			
+			<div class="sectionContent">
+				{% assign i=0 %}
+				{% for reference in site.data.resume.references %}
+					{% if i != 0%}<hr>{% endif %}
+					{% assign i = i | plus:1 %}
+					<p>{{ reference.name }}, {{ reference.position }} | <a href="mailto:{{ reference.email }}"><i class="fas fa-envelope"></i></a></p>
+				{% endfor %}
+			</div>
+			<div class="clear"></div>
+		</section>
+		<div style="display: flex; justify-content: center;">
+			<a class="fade-3" href="{{ site.data.resume.download | relative_url }}" download>
+				<div class="resume-section btn-outline"><i class="fa fa-download"></i></div>
+			</a>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
