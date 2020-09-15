@@ -5,7 +5,7 @@
 
 # Uncomment and configure your formspree link (don't include https://formspree.io/)
 # to add the formbutton to your site.
-link: your@email.com
+#link: your@email.com
 title: Contact Me
 theme: classic
 response: "Thanks for your message! I'll get back to you soon."
