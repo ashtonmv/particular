@@ -1,4 +1,7 @@
-<img src="favicon.ico" width="100px" height="100px"></image>
+<img src="favicon.ico" width="100px"></image>
+
+<img src="img/screenshot.png" width="600px"></image>
+
 # About
 Particular is a jekyll theme for personal websites.
 
