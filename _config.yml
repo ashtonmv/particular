@@ -18,3 +18,9 @@ author:
   name:
   email:
   twitter: # twitter username without the @ symbol
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENCE
