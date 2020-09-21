@@ -1,0 +1,37 @@
+# Navigation icons used throughout the site.
+
+# - id: just has to be unique, since it will be assigned to the html id
+#   icon: full class name of font-awesome (v. 5.14) icon
+#   url: if the url contains "http", it will automatically open a new tab.
+#        All other urls are considered to be part of this site.
+#   typewrite: text that is written when you hover over the icon on the home (or 404) page
+
+- id: home
+  icon: fas fa-home
+  url: /
+  typewrite: Home
+
+- id: about
+  icon: fas fa-address-card
+  url: about
+  typewrite: About Me
+
+- id: projects
+  icon: fas fa-tools
+  url: projects
+  typewrite: Projects
+
+- id: resume
+  icon: fas fa-file-contract
+  url: resume
+  typewrite: Resumé
+
+- id: github
+  icon: fab fa-github-alt
+  url: https://github.com/ashtonmv/particular-theme
+  typewrite: Github
+
+- id: linkedin
+  icon: fab fa-linkedin-in
+  url: https://www.linkedin.com
+  typewrite: LinkedIn

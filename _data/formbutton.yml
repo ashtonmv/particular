@@ -1,0 +1,23 @@
+# Style the basic appearance of the formspree formbutton
+# (see https://formspree.io/formbutton/docs for details)
+# To configure more detailed styles, like sizes, you'll need
+# to edit _includes/formbutton.html directly.
+
+# Uncomment and configure your formspree link (don't include https://formspree.io/)
+# to add the formbutton to your site.
+#link: your@email.com
+title: Contact Me
+theme: classic
+response: "Thanks for your message! I'll get back to you soon."
+error_message: "Oops! Something went wrong. Please be sure you entered a valid email address."
+color:
+  title: "#00b7ff"
+  title-background: white
+  body-background: white
+  button: white
+  button-background: "#00b7ff"
+font:
+  # Must be fonts available to your site, e.g. those you import
+  # in style.scss.
+  title: Lobster Two
+  body: Roboto Slab

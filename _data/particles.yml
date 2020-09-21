@@ -1,0 +1,25 @@
+# Style options for particleground.js
+
+color: rgba(255, 255, 255, 0.5)  # Particle color
+radius: 6  # Particle size
+proximity: 100  # How close two particles need to be before they join
+density: 20000  # actually = opposite of density; 1 particle every n pixels
+
+line:
+  color: rgba(255, 255, 255, 0.5)
+  width: 1
+  curved: false
+
+speed:
+  xmin: 0.1
+  xmax: 0.4
+  ymin: 0.1
+  ymax: 0.4
+
+direction:
+  x: center  # 'center', 'left' or 'right'. 'center' = dots bounce off edges
+  y: center  # 'center', 'left' or 'right'. 'center' = dots bounce off edges
+
+parallax:
+  activate: false  # particles "follow" the cursor
+  multiplier: 10  # The lower the number, the more extreme the parallax effect
