@@ -67,7 +67,7 @@ In addition to controlling the theme colors, `_sass/head.scss` is where custom f
 and where responsive CSS breakpionts can be controlled. The current breakpoints work well for most mobile
 devices and probably don't need to be changed (I hope).
 
-Technically the theme also uses bootstrap, which is included via `style/bootstrap.min.css`.
+Technically the theme also uses bootstrap, which is included via `css/bootstrap.min.css`.
 
 ## HTML files
 Even though it was my goal to shelter you from them, you will occasionally need to directly edit the
