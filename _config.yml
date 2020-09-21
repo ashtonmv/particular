@@ -1,11 +1,69 @@
-# Main site settings
-title: Particular
-email: your@email.com
-url: michael-ashton.com/particular
-baseurl: ""
-description: A clean, comfortable home for your resumé.
-keywords: Web, Development, Software, Programmer, Coding, Resume, resume
-meta_author: Your Name
+# Site settings
+title: Michael Ashton
+email: ashton@mpie.de
+url: michael-ashton.com
+baseurl: /
+description: Science + Software + Some other stuff
+phone: +49 176 329 81187
+address: Corintostrasse 2</br>Cologne, Germany 51103  # Don't forget the 
+keywords: Science, Software, Materials, Programmer, Coding, Development, Resume, CV, Physics, Research
+meta_author: Ashton Michael
+
+# Contact form:
+contact: formbutton
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+# disqus_shortname: myshortname
+
+style:
+  height-transition: 700px
+  width-transition: 500px
+
+# Color settings
+color:
+  primary: rgba(255, 59, 45, 1) #ff3b2d
+  secondary: rgba(255, 95, 67) #ff4c1f
+
+  particles: rgba(255,255,255,0.5)
+  particle-lines: rgba(255,255,255,0.5)
+
+
+# Nav Icons used throughout the website.
+# name: 
+nav-icons:
+  - name: home
+    icon: fas fa-home
+    url: /
+    typewrite: Home
+  - name: about
+    icon: fas fa-address-card
+    url: about
+    typewrite: About Me
+  - name: projects
+    icon: fas fa-tools
+    url: projects
+    typewrite: Projects
+  - name: cv
+    icon: fas fa-file-contract
+    url: cv
+    typewrite: Curriculum Vitae
+  - name: github
+    icon: fab fa-github-alt
+    url: https://github.com/ashtonmv
+    typewrite: Github
+  - name: publications
+    icon: fas fa-feather
+    url: https://scholar.google.com/citations?user=SgAQKZIAAAAJ&hl=en
+    typewrite: Google Scholar
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       permalink: ""
