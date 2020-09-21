@@ -1,12 +1,12 @@
 # Site settings
-title: Michael Ashton
-email: ashton@mpie.de
+title: Particular
+email: particular@gmail.com
 url: michael-ashton.com
 baseurl:
-description: Science + Software + Some other stuff
-phone: +49 176 329 81187
-address: Corintostrasse 2</br>Cologne, Germany 51103  # Don't forget the 
-keywords: Science, Software, Materials, Programmer, Coding, Development, Resume, CV, Physics, Research
+description: A clean, comfortable home for your resumé.
+phone: +0 867 5309
+address: Street 1</br>City, Country ZIPCODE  # Don't forget the <br>
+keywords: Science, Software, Programmer, Coding, Development, Resume, CV, Physics, Research
 meta_author: Ashton Michael
 
 # Contact form:
