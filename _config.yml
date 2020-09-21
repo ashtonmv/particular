@@ -1,0 +1,11 @@
+# Main site settings
+title: Particular
+email: your@email.com
+url: michael-ashton.com/particular
+baseurl: ""
+description: A clean, comfortable home for your resumé.
+keywords: Web, Development, Software, Programmer, Coding, Resume, resume
+meta_author: Your Name
+
+# Build settings
+markdown: kramdown
