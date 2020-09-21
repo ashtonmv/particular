@@ -8,4 +8,5 @@ keywords: Web, Development, Software, Programmer, Coding, Resume, resume
 meta_author: Your Name
 
 # Build settings
-markdown: kramdown
+markdown: kramdownn
+permalink: pretty
