@@ -1,11 +1,10 @@
 # ----
 # Site
 
-title: Particular
-description: A clean, comfortable home for your resume.
+title: Sprinkl
 github: ashtonmv/sprinkl_theme
 alert: "We promise not to steal your cookies!"
-url: michael-ashton.com/particular
+url: michael-ashton.com/sprinkl
 baseurl:
 
 email: sprinkl@gmail.com
