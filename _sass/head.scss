@@ -1,0 +1,14 @@
+$primary-color: #00b7ff;
+$secondary-color: #00e1ff;
+$content-color: #FFFFFF;
+$content-light: rgba($content-color, 0.2);
+$content-mid: rgba($content-color, 0.6);
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$header-font: "Lobster Two";
+$body-font: "Roboto Slab";
+
+$height-break: 700px;
+$width-break: 500px;
