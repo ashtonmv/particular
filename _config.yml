@@ -1,10 +1,20 @@
 title: Particular
-email: your@email.com
+github: ashtonmv/particular
 url: michael-ashton.com/particular
 baseurl:
+
+email: particular@gmail.com
 description: A clean, comfortable home for your resumé.
 keywords: Web, Development, Software, Programmer, Coding, Resume, resume
 meta_author: Your Name
 
 # Build settings
 markdown: kramdown
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: An interactive development environment (IDE) for computational materials science.
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
