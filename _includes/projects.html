@@ -9,7 +9,7 @@
         </div>
         <div class="project-row">
             {% assign i = 1 %}
-            {% for post in site.posts reversed %}
+            {% for post in site.categories.projects %}
                 <div class="project-item fade-{{ i }}">
                     {% assign i = i | plus: 1 %}
                     <a href="#projectModal-{{ post.modal-id }}" class="project-link" data-toggle="modal">
@@ -22,7 +22,7 @@
 </section>
 
  <!-- project Modals -->
- {% for post in site.posts %}
+ {% for post in site.categories.projects %}
     <div class="project-modal modal fade-0" id="projectModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">

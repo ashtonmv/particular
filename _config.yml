@@ -61,6 +61,10 @@ nav-icons:
 markdown: kramdown
 permalink: pretty
 
+jekyll-archives:
+  enabled:
+    - categories
+
 # defaults:
 #   - scope:
 #       path: ""
