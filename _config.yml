@@ -13,16 +13,9 @@ meta_author: Ashton Michael
 markdown: kramdown
 permalink: pretty
 
-jekyll-archives:
-  enabled:
-    - categories
-
-plugins:
-  - jekyll-archives
-
-# defaults:
-#   - scope:
-#       path: ""
-#       type: "posts"
-#     values:
-#       permalink: ""
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
