@@ -1,7 +1,0 @@
----
-title: Software Development
-modal-id: 1
-image: img/code.png
-alt: code
----
-Enter your project content here.
