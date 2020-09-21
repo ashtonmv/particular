@@ -1,7 +1,7 @@
 ---
 title: Photography
 modal-id: 1
-image: projects/img/photography.png
+image: img/photography.png
 alt: photography
 ---
 Enter your project content here.
