@@ -1,82 +1,69 @@
-# ----
-# Site
+# Site settings
+title: Michael Ashton
+email: ashton@mpie.de
+url: michael-ashton.com
+baseurl: /
+description: Science + Software + Some other stuff
+phone: +49 176 329 81187
+address: Corintostrasse 2</br>Cologne, Germany 51103  # Don't forget the 
+keywords: Science, Software, Materials, Programmer, Coding, Development, Resume, CV, Physics, Research
+meta_author: Ashton Michael
 
-title: Sprinkl
-github: ashtonmv/sprinkl_theme
-alert: "We promise not to steal your cookies!"
-url: michael-ashton.com/sprinkl
-baseurl:
+# Contact form:
+contact: formbutton
 
-email: sprinkl@gmail.com
-formspree: https://formspree.io/sprinkl@gmail.com
-copyright: Michael Ashton
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+# disqus_shortname: myshortname
 
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
+style:
+  height-transition: 700px
+  width-transition: 500px
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: An interactive development environment (IDE) for computational materials science.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+# Color settings
+color:
+  primary: rgba(255, 59, 45, 1) #ff3b2d
+  secondary: rgba(255, 95, 67) #ff4c1f
 
-# -----
-# Build
+  particles: rgba(255,255,255,0.5)
+  particle-lines: rgba(255,255,255,0.5)
 
+
+# Nav Icons used throughout the website.
+# name: 
+nav-icons:
+  - name: home
+    icon: fas fa-home
+    url: /
+    typewrite: Home
+  - name: about
+    icon: fas fa-address-card
+    url: about
+    typewrite: About Me
+  - name: projects
+    icon: fas fa-tools
+    url: projects
+    typewrite: Projects
+  - name: cv
+    icon: fas fa-file-contract
+    url: cv
+    typewrite: Curriculum Vitae
+  - name: github
+    icon: fab fa-github-alt
+    url: https://github.com/ashtonmv
+    typewrite: Github
+  - name: publications
+    icon: fas fa-feather
+    url: https://scholar.google.com/citations?user=SgAQKZIAAAAJ&hl=en
+    typewrite: Google Scholar
+
+# Build settings
 markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    default_lang: html
-    css_class: 'highlight'
+permalink: pretty
 
-timezone: Etc/UTC
-
-collections:
-  news:
-    _hide_content: true
-
-# max number of news or publication posts to list on a single page
-posts-per-page: 10
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 1500
-          height: 2500
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "category"
-    values:
-      layout: "default"
-      tall_bg: true        
-  -
-    scope:
-      path: "index.html"
-    values:
-      layout: "default"
-
-jekyll-archives:
-  enabled:
-    - categories
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       permalink: ""
