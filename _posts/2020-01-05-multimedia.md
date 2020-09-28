@@ -2,6 +2,5 @@
 title: Multimedia
 modal-id: 1
 image: img/multimedia.png
-alt: multimedia
+description: Enter your project description here.
 ---
-Enter your project content here.
