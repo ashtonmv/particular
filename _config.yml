@@ -1,12 +1,12 @@
 # Site settings
-title: Michael Ashton
-email: ashton@mpie.de
+title: Particular
+email: particular@gmail.com
 url: michael-ashton.com/particular
 baseurl: /
-description: Science + Software + Some other stuff
-phone: +49 176 329 81187
+description: A clean, comfortable home for your resumé
+phone: +0 867 5309
 address: Street 1</br>City, Country 12345
-keywords: Science, Software, Materials, Programmer, Coding, Development, Resume, CV, Physics, Research
+keywords: Jekyll, Template, Website, Resume, Portfolio, Personal, CV
 meta_author: Ashton Michael
 
 # Build settings

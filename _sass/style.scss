@@ -198,18 +198,15 @@ h6 {
 
 .nav-icon:hover {
     text-decoration: None !important;
-    background: $content-light;
+    background: $content-mid;
+    color: $primary-color;
     transition: .2s ease-in-out;
     cursor: pointer !important;
 }
 
 .nav-icon.active {
-    background: $content-mid;
+    background: white;
     color: $primary-color;
-}
-
-.nav-icon.active:hover {
-    background: $content-mid;
 }
 
 #formbutton-title {
