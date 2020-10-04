@@ -4,8 +4,14 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background: $primary-color;
     background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+}
+
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+    html, body {
+        background: $primary-color;
+    }
 }
 
 p {
@@ -165,6 +171,13 @@ h6 {
     padding: 50px 35px 35px 35px !important;
     border-radius: 20px 20px 20px 20px;
     border: 2px solid $content-color;
+
+    .nav-icon {
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+    }
+
 }
 
 .nav-break {
@@ -184,10 +197,10 @@ h6 {
 
 .nav-icon {
     text-decoration: none !important;
-    font-size: 20px;
-    line-height: 50px;
-    height: 50px;
-    width: 50px;
+    font-size: 32px;
+    line-height: 65px;
+    height: 65px;
+    width: 65px;
     margin: 10px auto;
     padding: 13px 10px 6px 10px !important;
     border: 2px solid $content-color;
