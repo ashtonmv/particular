@@ -1,7 +1,7 @@
 ---
-title: Software Development
+title: Multimedia
 layout: default
 modal-id: 1
-image: img/code.png
+image: img/multimedia.png
 description: Enter your project description here.
 ---

@@ -1,82 +1,13 @@
-# ----
-# Site
-
-title: Sprinkl
-github: ashtonmv/sprinkl_theme
-alert: "We promise not to steal your cookies!"
+# Site settings
+title: Particular
+email: particular@gmail.com
 url: michael-ashton.com/particular
-baseurl:
-
-email: sprinkl@gmail.com
-formspree: https://formspree.io/sprinkl@gmail.com
-copyright: Michael Ashton
-
-google_analytics_key:
-google_maps_javascript_api_key:
-disqus_shortname:
-
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: An interactive development environment (IDE) for computational materials science.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-
-# -----
-# Build
+baseurl: /
+description: A clean, comfortable home for your resumé
+phone: +0 867 5309
+address: Street 1</br>City, Country 12345
+keywords: Jekyll, Template, Website, Resume, Portfolio, Personal, CV
+meta_author: Ashton Michael
 
 markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    default_lang: html
-    css_class: 'highlight'
-
-timezone: Etc/UTC
-
-collections:
-  news:
-    _hide_content: true
-
-# max number of news or publication posts to list on a single page
-posts-per-page: 10
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 1500
-          height: 2500
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "category"
-    values:
-      layout: "default"
-      tall_bg: true        
-  -
-    scope:
-      path: "index.html"
-    values:
-      layout: "default"
-
-jekyll-archives:
-  enabled:
-    - categories
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
+permalink: pretty
