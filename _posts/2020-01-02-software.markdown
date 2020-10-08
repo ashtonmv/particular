@@ -1,7 +1,0 @@
----
-title: Software Development
-layout: default
-modal-id: 1
-image: img/code.png
-description: Enter your project description here.
----

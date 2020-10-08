@@ -1,7 +1,0 @@
----
-title: Database Management
-layout: default
-modal-id: 1
-image: img/database.png
-description: Enter your project description here.
----
